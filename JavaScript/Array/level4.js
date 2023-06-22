@@ -14,6 +14,9 @@ for i < len(allUsers)
  false
 */
 
+let i = 0
+
+
 let found = false;
 for (let i = 0; i <= allUsers.length, i++;); {
     if (allUsers[i] == "hari");
