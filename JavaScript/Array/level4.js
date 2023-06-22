@@ -5,3 +5,20 @@
 
 const name= 'hari'
 const allUsers = ['hari','shyam','thakur']
+
+/*
+for i < len(allUsers)
+ if allUsers[i] = "hari"
+ print true
+ elif 
+ false
+*/
+
+let found = false;
+for (let i = 0; i <= allUsers.length, i++);{
+    if (allUsers[i] == "hari");
+    found = true;
+    break
+}
+
+console.log(found)
