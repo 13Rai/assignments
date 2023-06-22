@@ -15,10 +15,8 @@ for i < len(allUsers)
 */
 
 let found = false;
-for (let i = 0; i <= allUsers.length, i++);{
+for (let i = 0; i <= allUsers.length, i++;); {
     if (allUsers[i] == "hari");
     found = true;
-    break
 }
-
 console.log(found)
