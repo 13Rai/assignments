@@ -23,10 +23,10 @@ console.log(found)
 const user= 'hari'
 const userArr = ['hari','shyam','hari','thakur']
 
-let c = 0
-let dupes = 0
-for (let c = 0; c <= userArr.length, i++;);{
-    if (userArr[c] == user);
-    dupes +=1
+let dupes = 0;
+for (let c = 0; c < userArr.length; c++) {
+    if (userArr[c] === user) {
+        dupes = dupes + 1;
+    }
 }
-console.log(dupes)
+console.log(dupes);
