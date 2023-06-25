@@ -47,6 +47,54 @@ for (let i = 0; i < newArr.length; i++) {
 
 console.log(sum3);
 
+//Q3 classroom solved
 
+/*
+const newArr = [[4,5], [5,7], [7,2]]
+let sum = 0
 
+newArr.flat().map((item)=>{
+  if(item % 2 !== 0){
+    sum = sum + newArr[i]
+  }
+})
+*/
 
+//Q4
+
+const myDetails = [
+  {id:3, name: 'hari'},
+  {id:5, name: 'shyam'},
+  {id:6, name: 'gopal'},
+]
+
+// return only array of ids: expected output  [3,5,6]
+
+myDetails.map((item)=>{
+  return item.id
+})
+
+//Q5
+
+const userDetails= [
+  {score: 0, name:'hari', marks: [10,3,23]},
+  {score: 0, name:'shyam', marks: [50,23,23]},
+  {score: 0, name:'shyam',marks: [20,13,43]},
+]
+//loop over the arr of objects and calculate total score, expected output is:
+
+// [
+//     {score: 36, name:'hari', marks: [10,3,23]},
+//     {score: 96, name:'shyam', marks: [50,23,23]},
+//     {score: 76, name:'shyam',marks: [20,13,43]},
+// ]
+
+userDetails.map((item)=>{
+let sum5 = 0
+item.marks.map((value)=>{
+  sum5 = sum5 + value
+})
+item.score = sum5
+return item
+
+})
