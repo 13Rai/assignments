@@ -6,8 +6,12 @@ const obj = {
 
 //calculate the percentage he scored in the exams out of total 150 score
 
-const total = (obj.computer + obj.maths + obj.science)
+arr = Object.values(obj)
 
-const percentage = Number((total /150) * 100)
+totalMarks = arr.reduce(calc)
+percentage = Math.floor((totalMarks/150)*100)
 
-console.log(Math.floor(percentage))
+function calc(accumulator, indexValue){
+  const total = accumulator + indexValue
+  return total
+}
